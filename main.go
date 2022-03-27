@@ -27,7 +27,7 @@ func main() {
 	})
 
 	r.GET("/ws", func(c *gin.Context) {
-		GetPodLogs(c.Writer, c.Request, "kong-dev", "kong-dev-kong-d8c494fcb-dmrtm", "proxy", true)
+		GetPodLogs(c.Writer, c.Request, "kong", "kong-d8c494fcb-dmrtm", "proxy", true)
 	})
 
 	r.Run("localhost:12312")
